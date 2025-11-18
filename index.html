@@ -305,6 +305,39 @@
             color: white;
         }
 
+        /* YouTube Video Styles */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-caption {
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+            color: #aaa;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -392,6 +425,18 @@
                     <h3>The Digital Revolution</h3>
                     <p>Transforming how we buy, sell, and connect</p>
                 </div>
+            </div>
+            
+            <!-- YouTube Video Section -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/U-X7DG9UY3M" 
+                            title="E-commerce and Digital Marketing Overview" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="video-caption">Watch this video to understand the fundamentals of E-commerce and Digital Marketing</p>
             </div>
             
             <p>The <span class="highlight">first online sale</span> occurred in <span class="highlight">1994</span> when Dan Kohn sold a CD for $12.48 on an encrypted website he built. Since then, e-commerce has evolved into a <span class="highlight">global multi-billion-dollar industry</span>, becoming more accessible, cheaper, and convenient compared to traditional storefront sales.</p>
